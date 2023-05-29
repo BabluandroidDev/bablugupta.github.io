@@ -1,0 +1,21 @@
+.seat-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .seat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin-right: 5px;
+  }
+  
+  .seat-reserved {
+    background-color: red;
+    color: white;
+  }
+  

@@ -1,0 +1,17 @@
+<h2>Train Seat Reservation</h2>
+<div *ngIf="!coachFull">
+  <label for="numSeats">Number of seats to reserve:</label>
+  <input type="number" id="numSeats" [(ngModel)]="numSeats">
+  <button (click)="reserveSeats()">Reserve Seats</button>
+</div>
+<div *ngIf="coachFull">
+  <p>The coach is full. No more seats available.</p>
+</div>
+<div>
+  <h3>Coach Layout</h3>
+  <div class="seat-row" *ngFor="let row of coachLayout">
+    <div class="seat" [ngClass]="{'seat-reserved': seatReserved(row, seat)}" *ngFor="let seat of row">
+      {{ seat }}
+    </div>
+  </div>
+</div>
