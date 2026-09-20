@@ -13,9 +13,9 @@ export const personalInfo = {
   preferredLocations: 'Noida, Pune, Bengaluru',
   noticePeriod: '30 days (Earliest joining: 15 days)',
   availability: 'Open for Full-time Roles & High-Impact Projects',
-  resumeUrl: '/assets/documents/Bablu_Gupta_Android_Developer.pdf',
-  resumeDocxUrl: '/assets/documents/Bablu_Gupta_Flutter_Developer.docx',
-  portraitUrl: '/assets/images/bablu_portrait.png',
+  resumeUrl: './assets/documents/Bablu_Gupta_Android_Developer.pdf',
+  resumeDocxUrl: './assets/documents/Bablu_Gupta_Flutter_Developer.docx',
+  portraitUrl: './assets/images/bablu_portrait.png',
   githubUrl: 'https://github.com/BabluandroidDev',
   linkedinUrl: 'https://www.linkedin.com/in/bablu-gupta-android-developer/',
 };
