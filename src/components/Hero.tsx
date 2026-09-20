@@ -17,8 +17,8 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
-          {/* Left Column: Text & CTAs (7 cols) */}
-          <div className="lg:col-span-7 flex flex-col items-start text-left">
+          {/* Left Column: Text & CTAs (7 cols) - order-2 on mobile, order-1 on desktop */}
+          <div className="order-2 lg:order-1 lg:col-span-7 flex flex-col items-start text-left">
             {/* Greeting badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-brand-500/30 text-sky-400 text-sm font-semibold mb-6 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-sky-400 animate-ping" />
@@ -87,8 +87,8 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
             </div>
           </div>
 
-          {/* Right Column: Visual Portrait & Floating Stat Cards (5 cols) */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end relative">
+          {/* Right Column: Visual Portrait & Floating Stat Cards (5 cols) - order-1 on mobile, order-2 on desktop */}
+          <div className="order-1 lg:order-2 lg:col-span-5 flex justify-center lg:justify-end relative">
             <div className="relative w-full max-w-[380px] sm:max-w-[420px]">
               
               {/* Outer glowing frame */}
